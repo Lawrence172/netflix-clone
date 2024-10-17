@@ -4,8 +4,14 @@
   box-sizing: border-box;
 }
 
+
 body {
-  font-family: "Netflix Font", sans-serif;
+  font-family: "Montserrat", serif;
+}
+
+header{
+  height: 100vh;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.61), rgba(0, 0, 0, 0.5)), url('https://assets.nflxext.com/ffe/siteui/vlv3/7c0e18aa-2c95-474d-802e-7f30e75dcca4/web/NG-en-20241014-TRIFECTA-perspective_96f899b3-9bad-446e-80b9-4b1da6a2242e_medium.jpg');
 }
 
 .nav {
@@ -31,4 +37,27 @@ body {
   border: none;
   color: #fff;
   font-weight: bold;
+}
+
+.head-sect1{
+  color: #fff;
+}
+
+.head{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  flex-wrap: wrap;
+  margin: 6rem auto;
+  text-align: center;
+  gap: 1rem;
+}
+
+.head-sect1 h1{
+  color: #fff;
+font-family: Netflix Sans;
+font-size: 66px;
+font-weight: 900;
+line-height: 70px;
+margin: 0px 0px 16px;
 }
