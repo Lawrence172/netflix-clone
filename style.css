@@ -45,10 +45,6 @@ header{
   font-weight: bold;
 }
 
-.head-sect1{
-  /* color: #fff; */
-}
-
 .head{
   display: flex;
   flex-direction: column;
@@ -65,7 +61,6 @@ font-size: 4.5vw;
 font-weight: 900;
 line-height: 120%;
 margin: 0px 0px 16px;
-/* word-wrap: break-word; */
 }
 
 .head-sect1 h6{
@@ -103,5 +98,23 @@ margin: 0px 0px 16px;
   border: none;
   font-size: 20px;
   font-weight: bold;
-  margin-top: 5px;
+}
+
+
+@media screen and (max-width: 600px ) {
+  .head-sect1 h1{
+    font-size: 6.5vw;
+  }
+  .head-sect1 h6{
+    font-size: 3vw;
+  }
+
+  .head-sect2 p{
+    font-size: 2.5vw;
+    word-break: break-word;
+  }
+}
+
+@media screen (max-width: 483px) {
+  
 }
