@@ -15,7 +15,8 @@ body {
 
 
 header{
-  height: 90vh;
+  height: max-content;
+  padding: 1px;
   background-image: linear-gradient(rgba(0, 0, 0, 0.61), rgba(0, 0, 0, 0.5)), url('https://assets.nflxext.com/ffe/siteui/vlv3/7c0e18aa-2c95-474d-802e-7f30e75dcca4/web/NG-en-20241014-TRIFECTA-perspective_96f899b3-9bad-446e-80b9-4b1da6a2242e_medium.jpg');
 }
 
@@ -45,7 +46,7 @@ header{
 }
 
 .head-sect1{
-  color: #fff;
+  /* color: #fff; */
 }
 
 .head{
@@ -55,20 +56,21 @@ header{
   flex-wrap: wrap;
   margin: 6rem auto;
   text-align: center;
-  gap: 1rem;
+  line-height: 72%;
 }
 
 .head-sect1 h1{
   color: #fff;
-font-size: 56px;
+font-size: 4.5vw;
 font-weight: 900;
-line-height: 70px;
+line-height: 120%;
 margin: 0px 0px 16px;
+/* word-wrap: break-word; */
 }
 
 .head-sect1 h6{
-  font-size: 20px;
-  color: #fff;
+  font-size: 2vw;
+  color: #ffffffd8;
   margin: 0px 0px 32px;
 }
 
@@ -80,6 +82,7 @@ margin: 0px 0px 16px;
 
 .head-sect2 p{
   color: #fff;
+  word-break: break-word;
 }
 
 .button input{
@@ -96,7 +99,7 @@ margin: 0px 0px 16px;
   background-color:#e50914;
   color: #fff;
   border-radius: 5px;
-  padding: 13px 25px;
+  padding: 12px 25px;
   border: none;
   font-size: 20px;
   font-weight: bold;
