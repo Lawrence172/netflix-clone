@@ -115,6 +115,28 @@ margin: 0px 0px 16px;
   }
 }
 
-@media screen (max-width: 483px) {
-  
+@media screen and (max-width: 483px) {
+
+  .head{
+    line-height: 50%;
+  }
+
+.button button{
+  margin-top: 0.5rem;
+}
+
+.head-sect1 h1{
+  font-size: 8.5vw;
+}
+
+.head-sect1 h6{
+  font-size: 3.5vw;
+}
+
+.head-sect2 p{
+  font-size: 5vw;
+  line-height: normal;
+  word-break: break-word;
+}
+
 }
