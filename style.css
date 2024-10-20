@@ -140,3 +140,26 @@ margin: 0px 0px 16px;
 }
 
 }
+
+.trending{
+  margin: auto;
+  width: 80vw;
+  margin-top: 2rem;
+}
+.trending h1{
+  text-align: left;
+  color: #fff;
+  font-size: 26px;
+}
+
+.group{
+  margin-top: 1rem;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.group img{
+  border-radius: 15px;
+}
