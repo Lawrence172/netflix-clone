@@ -155,7 +155,7 @@ margin: 0px 0px 16px;
 .group{
   margin-top: 1rem;
   display: flex;
-  flex-wrap: wrap;
+  /* flex-wrap: wrap; */
   justify-content: center;
   gap: 1rem;
 }
