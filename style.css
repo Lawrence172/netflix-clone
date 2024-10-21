@@ -151,7 +151,7 @@ section {
 article {
   display: flex;
   gap: 1rem;
-  animation: bannermove 20s linear infinite;
+  animation: bannermove 15s linear infinite;
 }
 
 article.paused {
