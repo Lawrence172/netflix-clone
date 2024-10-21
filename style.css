@@ -138,10 +138,7 @@ margin: 0px 0px 16px;
   line-height: normal;
   word-break: break-word;
 }
-
 }
-
-
 
 section {
   width: 100%;
@@ -157,10 +154,6 @@ article {
 article.paused {
   animation-play-state: paused; /* Pause animation */
 }
-
-/* div {
-  width: 100%;
-} */
 
 ul {
   display: flex;
@@ -184,7 +177,9 @@ li>img{
 }
 
 section{
+  margin: auto;
   margin-top: 1rem;
+  width: 80vw;
 }
 
 section>h1{
