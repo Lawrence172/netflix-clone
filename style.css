@@ -177,7 +177,6 @@ li>img{
 }
 
 section{
-  margin: auto;
   margin-top: 1rem;
   width: 80vw;
 }
@@ -186,4 +185,9 @@ section>h1{
   color: #fff;
   margin-left: 1rem;
   margin-bottom: 1rem;
+}
+@media screen (max-width: 768px) {
+  section{
+    width: 100vw;
+  }
 }
