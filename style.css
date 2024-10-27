@@ -227,7 +227,7 @@ section>h1{
 }
 
 .box h1{
-  font-size: 19px;
+  font-size: clamp(1rem, 2vw, 1.5rem);
   line-height: 27px;
 }
 
