@@ -189,15 +189,9 @@ section>h1{
   margin-bottom: 1rem;
 }
 
-@media screen and (max-width: 768px ) {
-  section{
-    width: 100%;
-  }
   li>img{
     width: auto;
   }
-
-}
 
 .reasons{
   width: 80vw;
@@ -206,6 +200,9 @@ section>h1{
   color: #fff;
 }
 
+.reasons h1{
+  font-size: 22px;
+}
 
 .boxes{
   display: flex;
@@ -220,9 +217,9 @@ section>h1{
   background: radial-gradient(circle at bottom right, #69093b -110%, #1a2042);
   border-radius: 1rem;
   padding: 20px 8px;
-  width: 18vw;
+  width: 19.1vw;
   height: 50vh;
-  display: inline-flex;
+  display: flex;
   flex-direction: column;
   align-items: flex-start;
   gap: 1rem;
@@ -230,16 +227,16 @@ section>h1{
 }
 
 .box h1{
-  font-size: 21px;
+  font-size: 19px;
   line-height: 27px;
 }
 
 .box p{
   color: #eeeeee98;
   line-height: 20px;
+  font-size: 14px;
 }
 .box-text{
-  /* background-color: red; */
   height: 12rem;
   display: flex;
   flex-direction: column;
@@ -267,8 +264,28 @@ section>h1{
 
 }
 
-@media screen and (max-width: 370px) {
+@media screen and (max-width: 730px){
+
+  .box-text{
+    gap: 0.3rem;
+  }
+
   .box h1{
     font-size: 15px;
   }
+
+  .box p{
+    font-size: 13px;
+  }
+
+}
+
+
+@media screen and (max-width: 370px) {
+
+  .box img{
+    margin-top: 0;
+    width: 3rem;
+  }
+  
 }
