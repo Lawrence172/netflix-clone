@@ -282,10 +282,41 @@ section>h1{
 
 
 @media screen and (max-width: 370px) {
-
   .box img{
     margin-top: 0;
     width: 3rem;
   }
-  
+}
+
+.faq{
+  width: 80vw;
+  margin: auto;
+  margin-top: 4rem;
+}
+
+.faq h1{
+  font-size: 1.5rem;
+  color: #fff;
+}
+
+.question{
+  margin-top: 1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.question-box{
+  display: flex;
+  justify-content: space-between;
+  background-color: #2d2d2d;
+  padding: 1.5rem 1rem;
+}
+
+.question-box h1{
+  font-weight: normal;
+}
+
+.question-box svg{
+  fill: #fff;
 }
