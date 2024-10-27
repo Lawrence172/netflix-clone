@@ -311,12 +311,21 @@ section>h1{
   justify-content: space-between;
   background-color: #2d2d2d;
   padding: 1.5rem 1rem;
+  cursor: pointer;
 }
 
 .question-box h1{
   font-weight: normal;
 }
 
-.question-box svg{
-  fill: #fff;
+.innertext{
+  display: none;
+  color: #fff;
+  background-color: #2d2d2d;
+  padding: 1.5rem 1rem;
+  
+}
+.innertext h6{
+  font-weight: normal;
+  font-size: clamp(1rem, 2vw, 1.5rem);
 }
