@@ -429,3 +429,7 @@ section>h1{
     align-items: flex-start;
   }
 }
+.sign{
+  text-decoration: none;
+  color: #fff;
+}
