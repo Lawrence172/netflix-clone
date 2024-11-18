@@ -1,27 +1,71 @@
-@import url('https://fonts.googleapis.com/css?family=Open+Sans&display=swap');
-
+/* General Body Styles */
 body {
-  font-family: 'Open Sans', sans-serif;
-  background: #f9faff;
-  color: #3a3c47;
-  line-height: 1.6;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  margin: 0;
-  padding: 0;
-}
-
-h1 {
-  margin-top: 48px;
-}
-
-.container{
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #000;
+    color: #fff;
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 100%;
     height: 100vh;
-    background-image: linear-gradient(rgba(0, 0, 0, 0.61), rgba(0, 0, 0, 0.5)), url('https://assets.nflxext.com/ffe/siteui/vlv3/7c0e18aa-2c95-474d-802e-7f30e75dcca4/web/NG-en-20241014-TRIFECTA-perspective_96f899b3-9bad-446e-80b9-4b1da6a2242e_medium.jpg');
-}
-
+  }
+  
+  /* Auth Form Container */
+  .auth-container {
+    background-color: rgba(0, 0, 0, 0.75);
+    padding: 20px;
+    border-radius: 5px;
+    width: 90%;
+    max-width: 400px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+  }
+  
+  .auth-form h1 {
+    margin-bottom: 20px;
+    font-size: 24px;
+  }
+  
+  .auth-form form {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .auth-form input {
+    padding: 10px;
+    margin-bottom: 15px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+  }
+  
+  .auth-form button {
+    padding: 10px;
+    background-color: #e50914;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+  }
+  
+  .auth-form button:hover {
+    background-color: #f40612;
+  }
+  
+  /* Google Sign-In Button */
+  .g_id_signin {
+    margin: 10px 0;
+    display: flex;
+    justify-content: center;
+  }
+  
+  .auth-options {
+    text-align: center;
+    font-size: 14px;
+  }
+  
+  .auth-options a {
+    color: #e50914;
+    text-decoration: none;
+  }
+  

@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Netflix Clone | Movies</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="movie-header">
+    <h1>Netflix</h1>
+    <input type="text" id="searchBar" placeholder="Search for movies...">
+  </header>
+
+  <main id="movieContainer">
+    <!-- Categories -->
+    <section class="movie-row" id="trending">
+      <h2>Trending Now</h2>
+      <div class="movie-list" id="trendingMovies">
+        <!-- Movie posters dynamically added here -->
+      </div>
+    </section>
+
+    <section class="movie-row" id="action">
+      <h2>Action Movies</h2>
+      <div class="movie-list" id="actionMovies">
+        <!-- Movie posters dynamically added here -->
+      </div>
+    </section>
+
+    <!-- More categories can be added dynamically -->
+  </main>
+
+  <!-- Modal for watching movies -->
+  <div id="movieModal" class="hidden">
+    <div class="modal-content">
+      <button id="closeModal">X</button>
+      <video id="moviePlayer" controls autoplay>
+        <source src="" type="video/mp4">
+        Your browser does not support the video tag.
+      </video>
+    </div>
+  </div>
+
+  <script src="app.js" type="module"></script>
+</body>
+</html>
