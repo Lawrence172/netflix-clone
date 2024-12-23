@@ -1,4 +1,8 @@
-// Your Firebase configuration
+// Firebase SDK imports
+import { initializeApp } from "https://www.gstatic.com/firebasejs/9.17.2/firebase-app.js";
+import { getAuth, signInWithEmailAndPassword, createUserWithEmailAndPassword, GoogleAuthProvider, signInWithPopup } from "https://www.gstatic.com/firebasejs/9.17.2/firebase-auth.js";
+
+// Firebase Configuration
 const firebaseConfig = {
     apiKey: "AIzaSyAIzO2fye8VIxnJOi2qEevo0_CwI7U5FVE",
     authDomain: "netflix-clone-12305.firebaseapp.com",
@@ -10,5 +14,6 @@ const firebaseConfig = {
   };
 
 // Initialize Firebase
-const app = firebase.initializeApp(firebaseConfig);
-const auth = firebase.auth();
+const app = initializeApp(firebaseConfig);
+export const auth = getAuth(app);
+export const provider = new GoogleAuthProvider();
