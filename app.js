@@ -1,6 +1,7 @@
 import { auth, provider } from "./firebase.js";
 import { signInWithEmailAndPassword, createUserWithEmailAndPassword, signInWithPopup } from "https://www.gstatic.com/firebasejs/9.17.2/firebase-auth.js";
 
+
 // Handle Signup
 const signupForm = document.getElementById("signupForm");
 if (signupForm) {
