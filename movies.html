@@ -1,47 +1,39 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Netflix Clone | Movies</title>
-  <link rel="stylesheet" href="movie.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Netflix Clone - Movies</title>
+    <link rel="stylesheet" href="movie.css">
 </head>
 <body>
-  <header class="header">
-    <div class="logo">Netflix</div>
-    <nav class="nav">
-      <input type="text" id="search-bar" placeholder="Search movies...">
-    </nav>
-  </header>
+    <!-- Navbar -->
+    <header>
+        <nav>
+            <img src="https://upload.wikimedia.org/wikipedia/commons/0/08/Netflix_2015_logo.svg" alt="Netflix Logo" class="logo">
+                <button id="logoutBtn">Logout</button>
+        </nav>
+    </header>
 
-  <section class="hero">
-    <div class="hero-content">
-      <h1 class="hero-title">Featured Movie</h1>
-      <p class="hero-description">An exciting movie that captures your imagination and thrills you!</p>
-      <button class="hero-btn">Watch Now</button>
+    <!-- Movie Listings -->
+    <main>
+        <section class="movie-section">
+            <h2 class="section-title">Popular Movies</h2>
+            <div class="movie-list">
+                <!-- Movie elements will be dynamically inserted here -->
+            </div>
+            <div id="loading" class="loading-indicator" style="display: none;">Loading...</div>
+        </section>
+    </main>
+
+    <!-- Video Modal -->
+    <div id="video-modal" class="modal">
+        <div class="modal-content">
+            <span class="close-btn" id="close-btn">&times;</span>
+            <iframe id="video-frame" src="" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe>
+        </div>
     </div>
-  </section>
 
-  <main>
-    <section class="movies-section">
-      <h2>Movies</h2>
-      <div id="movies-container" class="movies-container">
-        <!-- Movie cards will be dynamically added here -->
-        <div class="movie-card">
-          <img src="path/to/poster.jpg" alt="Movie Title">
-          <h3>Movie Title</h3>
-        </div>
-        <div class="movie-card">
-          <img src="path/to/poster2.jpg" alt="Another Movie">
-          <h3>Another Movie</h3>
-        </div>
-      </div>
-    </section>
-  </main>
-
-  <footer class="footer">
-    <p>&copy; 2024 Netflix Clone</p>
-  </footer>
-  <script src="app.js"></script>
+    <script src="movie.js"></script>
 </body>
 </html>
