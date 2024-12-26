@@ -47,21 +47,21 @@ header button:hover {
 }
 
 .movie-list {
-  display: flex;
-  flex-wrap: wrap;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(220px, 1fr)); /* Grid layout with responsive columns */
   gap: 20px;
-  justify-content: center;
+  justify-items: center; /* Center items in the grid */
 }
 
 /* Movie Card Styles */
 .movie-card {
-  width: 220px;
   background-color: #333;
   border-radius: 8px;
   overflow: hidden;
   text-align: center;
   color: white;
   transition: transform 0.3s ease;
+  width: 100%; /* Ensure cards take full width in grid */
 }
 
 .movie-card img {
@@ -105,14 +105,20 @@ header button:hover {
       margin-top: 10px;
   }
 
-  /* Adjust movie cards layout for smaller screens */
+  /* Grid layout for mobile */
   .movie-list {
-      justify-content: flex-start;
+      grid-template-columns: repeat(auto-fill, minmax(150px, 1fr)); /* More compact grid layout */
       gap: 10px;
+      padding: 10px; /* Add padding around the grid */
   }
 
   .movie-card {
-      width: 150px; /* Smaller width for mobile */
+      width: 100%; /* Ensure cards use full width available */
+  }
+
+  .watch-btn {
+      font-size: 12px; /* Smaller button text on mobile */
+      padding: 8px 16px; /* Smaller padding for buttons on mobile */
   }
 }
 
@@ -164,4 +170,12 @@ header button:hover {
   color: #fff;
   font-size: 1.5rem;
   margin: 20px 0;
+}
+
+nav{
+  display: flex;
+  margin: auto;
+  align-items: center;
+  width: 90vw;
+  justify-content: space-between;
 }
