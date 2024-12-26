@@ -7,41 +7,41 @@
   <link rel="stylesheet" href="movie.css">
 </head>
 <body>
-  <header class="movie-header">
-    <h1>Netflix</h1>
-    <input type="text" id="searchBar" placeholder="Search for movies...">
+  <header class="header">
+    <div class="logo">Netflix</div>
+    <nav class="nav">
+      <input type="text" id="search-bar" placeholder="Search movies...">
+    </nav>
   </header>
 
-  <main id="movieContainer">
-    <!-- Categories -->
-    <section class="movie-row" id="trending">
-      <h2>Trending Now</h2>
-      <div class="movie-list" id="trendingMovies">
-        <!-- Movie posters dynamically added here -->
+  <section class="hero">
+    <div class="hero-content">
+      <h1 class="hero-title">Featured Movie</h1>
+      <p class="hero-description">An exciting movie that captures your imagination and thrills you!</p>
+      <button class="hero-btn">Watch Now</button>
+    </div>
+  </section>
+
+  <main>
+    <section class="movies-section">
+      <h2>Movies</h2>
+      <div id="movies-container" class="movies-container">
+        <!-- Movie cards will be dynamically added here -->
+        <div class="movie-card">
+          <img src="path/to/poster.jpg" alt="Movie Title">
+          <h3>Movie Title</h3>
+        </div>
+        <div class="movie-card">
+          <img src="path/to/poster2.jpg" alt="Another Movie">
+          <h3>Another Movie</h3>
+        </div>
       </div>
     </section>
-
-    <section class="movie-row" id="action">
-      <h2>Action Movies</h2>
-      <div class="movie-list" id="actionMovies">
-        <!-- Movie posters dynamically added here -->
-      </div>
-    </section>
-
-    <!-- More categories can be added dynamically -->
   </main>
 
-  <!-- Modal for watching movies -->
-  <div id="movieModal" class="hidden">
-    <div class="modal-content">
-      <button id="closeModal">X</button>
-      <video id="moviePlayer" controls autoplay>
-        <source src="" type="video/mp4">
-        Your browser does not support the video tag.
-      </video>
-    </div>
-  </div>
-
-  <script src="app.js" type="module"></script>
+  <footer class="footer">
+    <p>&copy; 2024 Netflix Clone</p>
+  </footer>
+  <script src="app.js"></script>
 </body>
 </html>
