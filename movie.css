@@ -31,14 +31,6 @@ header button {
   cursor: pointer;
 }
 
-nav{
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  width: 90vw;
-  margin: auto;
-}
-
 header button:hover {
   background-color: #f40612;
 }
@@ -61,13 +53,15 @@ header button:hover {
   justify-content: center;
 }
 
+/* Movie Card Styles */
 .movie-card {
-  width: 200px;
+  width: 220px;
   background-color: #333;
   border-radius: 8px;
   overflow: hidden;
   text-align: center;
   color: white;
+  transition: transform 0.3s ease;
 }
 
 .movie-card img {
@@ -94,6 +88,34 @@ header button:hover {
   background-color: #f40612;
 }
 
+.movie-card:hover {
+  transform: scale(1.05); /* Slight zoom effect on hover */
+}
+
+/* Responsive Adjustments for Mobile */
+@media screen and (max-width: 768px) {
+  /* Adjust header padding and button layout on smaller screens */
+  header {
+      padding: 15px;
+      flex-direction: column;
+      align-items: flex-start;
+  }
+
+  header button {
+      margin-top: 10px;
+  }
+
+  /* Adjust movie cards layout for smaller screens */
+  .movie-list {
+      justify-content: flex-start;
+      gap: 10px;
+  }
+
+  .movie-card {
+      width: 150px; /* Smaller width for mobile */
+  }
+}
+
 /* Modal Styles */
 .modal {
   display: none;
@@ -117,8 +139,8 @@ header button:hover {
   display: flex;
   flex-direction: column;
   align-items: center;
-  width: 80%; /* Keeps the modal large even on mobile */
-  height: 70%; /* Keeps the modal height consistent */
+  width: 80%;
+  height: 70%;
 }
 
 .modal-content iframe {
